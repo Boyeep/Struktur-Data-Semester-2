@@ -8,9 +8,6 @@ For each problem, this README explains:
 - how the solution works
 - the main idea behind the approach
 
-For `Soal 3`, `Soal 4`, `Soal 5`, and `Soal 6`, the explanation is based on the PDF statements.  
-For `Soal 1` and `Soal 2`, the explanation is reconstructed from the current code because only the source file was available during this writeup.
-
 ## Soal 1
 
 File: [Soal_1.cpp](/c:/Users/asus/OneDrive/Desktop/Data%20Structure%20Practice/First%20Lab%20Session/Soal_1.cpp)
