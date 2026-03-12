@@ -127,7 +127,7 @@ This problem is naturally about stacks:
 - `PULL x` requires lifting some items from the top
 - `PUT` returns items from the top of the second stack back to the main stack
 
-The temporary `queue` is used to restore the lifted macarons in the same removal order, which causes their order on the main stack to become reversed. That matches the PDF diagram.
+The temporary `queue` is used to restore the lifted macarons in the same removal order, which causes their order on the main stack to become reversed.
 
 ### Solution idea
 
