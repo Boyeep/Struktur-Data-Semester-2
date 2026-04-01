@@ -10,7 +10,6 @@ int main() {
     cin >> n >> m;
 
     string st;
-    st.reserve(n.size());
 
     for (char digit : n) {
         while (m > 0 && !st.empty() && st.back() > digit) {
@@ -30,7 +29,10 @@ int main() {
         ++firstNonZero;
     }
 
-    string answer = st.substr(firstNonZero);
+    string answer;
+    for (size_t i = firstNonZero; i < st.size(); ++i) {
+        answer.push_back(st[i]);
+    }
     if (answer.empty()) {
         answer = "0";
     }

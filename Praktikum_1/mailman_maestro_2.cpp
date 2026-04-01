@@ -9,7 +9,6 @@ int main() {
     cin >> n;
 
     unordered_map<string, int> id;
-    id.reserve(n * 2);
 
     for (int i = 0; i < n; ++i) {
         string name;

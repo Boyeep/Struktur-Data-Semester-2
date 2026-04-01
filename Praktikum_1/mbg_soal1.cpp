@@ -11,6 +11,13 @@ struct Rack {
     size_t total = 0;
 };
 
+void removeRak2At(vector<Rak2>& rak2, size_t index) {
+    for (size_t i = index + 1; i < rak2.size(); ++i) {
+        rak2[i - 1] = rak2[i];
+    }
+    rak2.pop_back();
+}
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -75,11 +82,11 @@ int main() {
                 --rak.total;
 
                 if (rak3.count == 0) {
-                    rak.rak2.erase(rak.rak2.begin() + i);
+                    removeRak2At(rak.rak2, i);
                     if (i > 0 && i < rak.rak2.size() &&
                         rak.rak2[i - 1].menu == rak.rak2[i].menu) {
                         rak.rak2[i - 1].count += rak.rak2[i].count;
-                        rak.rak2.erase(rak.rak2.begin() + i);
+                        removeRak2At(rak.rak2, i);
                     }
                 }
 
